@@ -62,8 +62,19 @@
       <section id="events" class="my-5">
         <hr>
         <h3 class="text-center dark-grey-text font-weight-bold mb-5 pt-5 wow fadeIn" data-wow-delay="0.2s">
-          <strong>Hello, Contact!</strong>
+          <strong>Hello :)</strong>
         </h3>
+
+        <div class="text-center">
+          <p class="text-center w-responsive mx-auto my-5 text-primary font-weight-bold wow fadeIn">Play this before
+            continuing scroll down (use headset/earphone for better feeling)
+          </p>
+          <audio id="perfect">
+            <source src="assets/perfect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <button class="btn btn-primary d-none" id="btnPerfect"></button>
+        </div>
         <!-- Section description -->
         <p class="text-center w-responsive mx-auto my-5 grey-text wow fadeIn" data-wow-delay="0.2s">Please don't share
           this to others. This is only for yourself.</p>
@@ -503,11 +514,6 @@
             <p class="text-center w-responsive mx-auto my-5 text-primary wow fadeIn" data-wow-delay="0.2s"
               id="myAnswer">
             </p>
-            <audio id="perfect">
-              <source src="assets/perfect.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-            <button class="btn btn-primary d-none" id="btnPerfect"></button>
           </section>
           <hr>
         </div>
@@ -656,19 +662,18 @@
     const play = createElement('fa-play');
     const pause = createElement('fa-pause');
     btnPerfect.appendChild(play);
-    setTimeout(() => {
-      btnPerfect.classList.remove('d-none');
-      btnPerfect.addEventListener('click', function () {
-        // Play Perfect
-        if (perfect.paused) {
-          perfect.play();
-          btnPerfect.replaceChild(pause, play)
-        } else {
-          perfect.pause();
-          btnPerfect.replaceChild(play, pause)
-        }
-      });
-    }, 1000);
+
+    btnPerfect.classList.remove('d-none');
+    btnPerfect.addEventListener('click', function () {
+      // Play Perfect
+      if (perfect.paused) {
+        perfect.play();
+        btnPerfect.replaceChild(pause, play)
+      } else {
+        perfect.pause();
+        btnPerfect.replaceChild(play, pause)
+      }
+    });
   </script>
 </body>
 

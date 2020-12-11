@@ -39,7 +39,7 @@
           <div class="row smooth-scroll">
             <div class="col-md-12 text-center white-text">
               <div class="wow fadeInDown" data-wow-delay="0.2s">
-                <h3 class="display-4 font-weight-bold mb-2 py-2"><i class="far fa-smile"></i></h3>
+                <h3 class="display-4 font-weight-bold mb-2 py-2"> <img src="img/custom/cat.gif" alt="gif" id="gif"></h3>
                 <hr class="hr-light my-4">
                 <h4 class="subtext-header mt-2 mb-4">
                   <p class="clearfix d-none d-md-inline-block">Scroll down slowly to see the magic</p>
@@ -552,6 +552,15 @@
   </script>
 
   <script>
+    const gif = document.querySelector('#gif');
+    gif.addEventListener('mouseover', function () {
+      gif.src = "img/custom/love.gif";
+    })
+
+    gif.addEventListener('mouseout', function () {
+      gif.src = "img/custom/cat.gif";
+    })
+
     function type(element, text) {
       new TypeIt("#" + element, {
         strings: text,

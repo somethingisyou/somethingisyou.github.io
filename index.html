@@ -13,65 +13,11 @@
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/addons-pro/timeline.min.css">
-  <style>
-    html,
-    body,
-    header,
-    .view.jarallax {
-      height: 100%;
-      min-height: 100%;
-
-    }
-
-    #home {
-      background-image: url('img/custom/rain.gif');
-    }
-
-    #fade {
-      opacity: 0;
-    }
-  </style>
 </head>
 
 <body class="event-lp">
   <!-- Navigation & Intro -->
-  <header>
-
-    <!-- Intro Section -->
-    <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}'>
-      <div class="mask rgba-black-strong">
-        <div class="container h-100 d-flex justify-content-center align-items-center mt-5">
-          <div class="row smooth-scroll">
-            <div class="col-md-12 text-center white-text">
-              <div id="fade">
-                <h3 class="display-4 font-weight-bold mb-2 py-2"> <img src="img/custom/cat-sleep.gif" class="gif"
-                    alt="gif" id="gif"></h3>
-                <hr class="hr-light my-4">
-                <h4 class="subtext-header mt-2 mb-4">
-                  <p class="clearfix d-none d-md-inline-block">No need to scroll down, magic is only imagination</p>
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </header>
-  <!-- Navigation & Intro -->
-
-  <!--Footer-->
-  <footer class="page-footer bg-primary text-center text-md-left pt-0">
-    <!--Copyright-->
-    <div class="footer-copyright py-3 text-center">
-      <div class="container-fluid">
-        © 2020 Copyright: -
-      </div>
-    </div>
-    <!--/Copyright-->
-
-  </footer>
-  <!--/Footer-->
+4.5 hours fruitless
 
   <!--  JQuery  -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
@@ -86,30 +32,6 @@
   <script>
     // Animation init
     new WOW().init();
-  </script>
-
-
-
-  <script type="text/javascript">
-    let opacity = 0;
-    let intervalID = 0;
-    window.onload = fadeIn;
-
-    function fadeIn() {
-      setInterval(show, 400);
-    }
-
-    function show() {
-      let fade = document.getElementById("fade");
-      opacity = Number(window.getComputedStyle(fade)
-        .getPropertyValue("opacity"));
-      if (opacity < 1) {
-        opacity = opacity + 0.03;
-        fade.style.opacity = opacity
-      } else {
-        clearInterval(intervalID);
-      }
-    }
   </script>
 </body>
 

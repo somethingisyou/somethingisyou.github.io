@@ -1,9 +1,3 @@
-    const gif = document.querySelector('#gif');
-
-    gif.addEventListener('mouseout', function () {
-
-    })
-
     function type(element, text) {
       new TypeIt("#" + element, {
         strings: text,

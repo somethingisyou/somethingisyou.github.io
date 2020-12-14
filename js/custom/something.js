@@ -100,7 +100,7 @@
       type("myAnswer",
         "You know i love you Contact, Amel, Jasmine or whoever your name is. I just love you really. But, i don't know when you asked me that caused you are bored at home and cannot hang out with your friends, only supposition question, or deep from your heart. Other than that, i am afraid when you are with me i set rules for your life, i don't want to do that, you are an active person, i can't prevent your activity and i really don't want to. Further when you asked me, i didn't know what to say after what i have been through and you have been through. I am afraid to dissapoint you and you are afraid to hurt me for the second times. I only can say, i don't want to lose you like i lose you before or lose you in any other way. I can't answer we could start all over again or not, i just love you and don't want to lose you again. Let times answer this question, because times that bring us to this feeling. Just like we talked on last night, 'Kalo jodoh ya udah lanjut itu yang terbaik, kalo engga, berarti itu yang terbaik'. I am focusing on my life, if you want to accompany me through things what will happen in front of, and grow together, start together, be better together until times answer your question, i would be very happy... <br><br> ~ Nitip"
       );
-    }, 1);
+    }, 315000);
 
     const btnPerfect = document.querySelector('#btnPerfect');
     const perfect = document.querySelector('#perfect');

@@ -13,24 +13,7 @@
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/addons-pro/timeline.min.css">
-  <style>
-    html,
-    body,
-    header,
-    .view.jarallax {
-      height: 100%;
-      min-height: 100%;
-
-    }
-
-    #home {
-      background-image: url('img/custom/rain.gif');
-    }
-
-    #fade {
-      opacity: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="css/custom/something.css">
 </head>
 
 <body class="event-lp">
@@ -43,12 +26,12 @@
         <div class="container h-100 d-flex justify-content-center align-items-center mt-5">
           <div class="row smooth-scroll">
             <div class="col-md-12 text-center white-text">
-              <div id="fade">
-                <h3 class="display-4 font-weight-bold mb-2 py-2"> <img src="img/custom/cat-sleep.gif" class="gif"
+              <div class="wow fadeInDown" data-wow-delay="0.2s">
+                <h3 class="display-4 font-weight-bold mb-2 py-2"> <img src="img/custom/hamster.gif" class="gif"
                     alt="gif" id="gif"></h3>
                 <hr class="hr-light my-4">
                 <h4 class="subtext-header mt-2 mb-4">
-                  <p class="clearfix d-none d-md-inline-block">No need to scroll down, magic is only imagination</p>
+                  <p class="clearfix d-none d-md-inline-block">Scroll down slowly to see the magic</p>
                 </h4>
               </div>
             </div>
@@ -60,12 +43,480 @@
   </header>
   <!-- Navigation & Intro -->
 
+  <!-- Main content -->
+  <main>
+
+    <div class="container">
+      <!-- Section: Details -->
+      <section id="events" class="my-5">
+        <hr>
+        <h3 class="text-center dark-grey-text font-weight-bold mb-5 pt-5 wow fadeIn" data-wow-delay="0.2s">
+          <strong>Hello :)</strong>
+        </h3>
+        <div class="text-center">
+          <p class="text-center w-responsive mx-auto my-5 text-primary font-weight-bold wow fadeIn">Play this while
+            scrolling down (use headset/earphone for better feeling)
+          </p>
+          <audio id="perfect">
+            <source src="assets/perfect.mp3" type="audio/mpeg">
+          </audio>
+          <button class="btn btn-primary d-none" id="btnPerfect"></button>
+        </div>
+        <!-- Section description -->
+        <p class="text-center w-responsive mx-auto my-5 grey-text wow fadeIn" data-wow-delay="0.2s">Please don't share
+          this to others. This is only for yourself.</p>
+
+        <!-- Timeline -->
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <div class="timeline-main">
+              <!-- Timeline Wrapper -->
+              <ul class="stepper stepper-vertical timeline timeline-simple pl-0">
+                <li>
+                  <!--Section Title -->
+                  <a href="#!">
+                    <span class="circle grey"></span>
+                  </a>
+
+                  <!-- Section Description -->
+                  <div class="step-content z-depth-1 ml-3 p-4 hoverable">
+                    <h4 class="font-weight-bold">The First Time</h4>
+                    <p class="text-muted mt-3">
+                      <i class="far fa-clock-o" aria-hidden="true"></i> 2016
+                    </p>
+                    <!--Grid row-->
+                    <div class="row pt-2">
+                      <!--Grid column-->
+                      <div class="col-md-4 col-4">
+                        <div class="avatar mx-auto">
+                          <img src="img/custom/1.jpeg" class="rounded img-fluid" alt="First sample avatar image">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-8 col-8">
+                        <p class="mb-0" id="first"></p>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </li>
+                <li class="timeline-inverted">
+                  <!--Section Title -->
+                  <a href="#!">
+                    <span class="circle grey"></span>
+                  </a>
+                  <!-- Section Description -->
+                  <div class="step-content z-depth-1 mr-xl-3 p-4 hoverable">
+                    <h4 class="font-weight-bold">Keep Watching</h4>
+                    <p class="text-muted mt-3">
+                      <i class="far fa-clock-o" aria-hidden="true"></i> 2016-2017
+                    </p>
+                    <!--Grid row-->
+                    <div class="row pt-2">
+                      <!--Grid column-->
+                      <div class="col-md-4 col-4">
+                        <div class="avatar mx-auto">
+                          <img src="img/custom/2.jpeg" class="rounded img-fluid" alt="First sample avatar image">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-8 col-8">
+                        <p class="mb-0" id="second"></p>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </li>
+                <li>
+                  <!--Section Title -->
+                  <a href="#!">
+                    <span class="circle grey"></span>
+                  </a>
+
+                  <!-- Section Description -->
+                  <div class="step-content z-depth-1 ml-3 p-4 hoverable">
+                    <h4 class="font-weight-bold">The Circle</h4>
+                    <p class="text-muted mt-3">
+                      <i class="far fa-clock-o" aria-hidden="true"></i>2017
+                    </p>
+                    <!--Grid row-->
+                    <div class="row pt-2">
+                      <!--Grid column-->
+                      <div class="col-md-4 col-4">
+                        <div class="avatar mx-auto">
+                          <img src="img/custom/3.jpeg" class="rounded img-fluid" alt="First sample avatar image">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-8 col-8">
+                        <p class="mb-0" id="third"></p>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </li>
+                <li class="timeline-inverted">
+                  <!--Section Title -->
+                  <a href="#!">
+                    <span class="circle grey"></span>
+                  </a>
+                  <!-- Section Description -->
+                  <div class="step-content z-depth-1 mr-xl-3 p-4 hoverable">
+                    <h4 class="font-weight-bold"> Closer</h4>
+                    <p class="text-muted mt-3">
+                      <i class="far fa-clock-o" aria-hidden="true"></i> 2017
+                    </p>
+                    <!--Grid row-->
+                    <div class="row pt-2">
+                      <!--Grid column-->
+                      <div class="col-md-4 col-4">
+                        <div class="avatar mx-auto">
+                          <img src="img/custom/4.jpeg" class="rounded img-fluid" alt="First sample avatar image">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-8 col-8">
+                        <p class="mb-0" id="fourth"></p>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </li>
+                <li>
+                  <!--Section Title -->
+                  <a href="#!">
+                    <span class="circle grey"></span>
+                  </a>
+                  <!-- Section Description -->
+                  <div class="step-content z-depth-1 ml-3 p-4 hoverable">
+                    <h4 class="font-weight-bold">Thinking to step away</h4>
+                    <p class="text-muted mt-3">
+                      <i class="far fa-clock-o" aria-hidden="true"></i> 2017
+                    </p>
+                    <!--Grid row-->
+                    <div class="row pt-2">
+                      <!--Grid column-->
+                      <div class="col-md-4 col-4">
+                        <div class="avatar mx-auto">
+                          <img src="img/custom/5.jpeg" class="rounded img-fluid" alt="First sample avatar image">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-8 col-8">
+                        <p class="mb-0" id="fifth"></p>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </li>
+                <li class="timeline-inverted">
+                  <!--Section Title -->
+                  <a href="#!">
+                    <span class="circle grey"></span>
+                  </a>
+                  <!-- Section Description -->
+                  <div class="step-content z-depth-1 mr-xl-3 p-4 hoverable">
+                    <h4 class="font-weight-bold"> Closer - 2</h4>
+                    <p class="text-muted mt-3">
+                      <i class="far fa-clock-o" aria-hidden="true"></i> 2017
+                    </p>
+                    <!--Grid row-->
+                    <div class="row pt-2">
+                      <!--Grid column-->
+                      <div class="col-md-4 col-4">
+                        <div class="avatar mx-auto">
+                          <img src="img/custom/6.jpeg" class="rounded img-fluid" alt="First sample avatar image">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-8 col-8">
+                        <p class="mb-0" id="sixth"></p>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </li>
+                <li>
+                  <!--Section Title -->
+                  <a href="#!">
+                    <span class="circle grey"></span>
+                  </a>
+                  <!-- Section Description -->
+                  <div class="step-content z-depth-1 ml-3 p-4 hoverable">
+                    <h4 class="font-weight-bold">Getting used to</h4>
+                    <p class="text-muted mt-3">
+                      <i class="far fa-clock-o" aria-hidden="true"></i> 2017-2018
+                    </p>
+                    <!--Grid row-->
+                    <div class="row pt-2">
+                      <!--Grid column-->
+                      <div class="col-md-4 col-4">
+                        <div class="avatar mx-auto">
+                          <img src="img/custom/7.jpeg" class="rounded img-fluid" alt="First sample avatar image">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-8 col-8">
+                        <p class="mb-0" id="seventh"></p>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </li>
+                <li class="timeline-inverted">
+                  <!--Section Title -->
+                  <a href="#!">
+                    <span class="circle grey"></span>
+                  </a>
+                  <!-- Section Description -->
+                  <div class="step-content z-depth-1 mr-xl-3 p-4 hoverable">
+                    <h4 class="font-weight-bold"> The Beginning</h4>
+                    <p class="text-muted mt-3">
+                      <i class="far fa-clock-o" aria-hidden="true"></i> 2018-2019
+                    </p>
+                    <!--Grid row-->
+                    <div class="row pt-2">
+                      <!--Grid column-->
+                      <div class="col-md-4 col-4">
+                        <div class="avatar mx-auto">
+                          <img src="img/custom/1.jpeg" class="rounded img-fluid" alt="First sample avatar image">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-8 col-8">
+                        <p class="mb-0" id="eight"></p>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </li>
+                <li>
+                  <!--Section Title -->
+                  <a href="#!">
+                    <span class="circle grey"></span>
+                  </a>
+                  <!-- Section Description -->
+                  <div class="step-content z-depth-1 ml-3 p-4 hoverable">
+                    <h4 class="font-weight-bold">Things go deep</h4>
+                    <p class="text-muted mt-3">
+                      <i class="far fa-clock-o" aria-hidden="true"></i> 2019
+                    </p>
+                    <!--Grid row-->
+                    <div class="row pt-2">
+                      <!--Grid column-->
+                      <div class="col-md-4 col-4">
+                        <div class="avatar mx-auto">
+                          <img src="img/custom/2.jpeg" class="rounded img-fluid" alt="First sample avatar image">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-8 col-8">
+                        <p class="mb-0" id="nineth"></p>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </li>
+                <li class="timeline-inverted">
+                  <!--Section Title -->
+                  <a href="#!">
+                    <span class="circle grey"></span>
+                  </a>
+                  <!-- Section Description -->
+                  <div class="step-content z-depth-1 mr-xl-3 p-4 hoverable">
+                    <h4 class="font-weight-bold">Something I hardly forget until now</h4>
+                    <p class="text-muted mt-3">
+                      <i class="far fa-clock-o" aria-hidden="true"></i> 2019
+                    </p>
+                    <!--Grid row-->
+                    <div class="row pt-2">
+                      <!--Grid column-->
+                      <div class="col-md-4 col-4">
+                        <div class="avatar mx-auto">
+                          <img src="img/custom/3.jpeg" class="rounded img-fluid" alt="First sample avatar image">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-8 col-8">
+                        <p class="mb-0" id="tenth">
+                        </p>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </li>
+                <li>
+                  <!--Section Title -->
+                  <a href="#!">
+                    <span class="circle grey"></span>
+                  </a>
+                  <!-- Section Description -->
+                  <div class="step-content z-depth-1 ml-3 p-4 hoverable">
+                    <h4 class="font-weight-bold">Then, it turned away</h4>
+                    <p class="text-muted mt-3">
+                      <i class="far fa-clock-o" aria-hidden="true"></i> 2019
+                    </p>
+                    <!--Grid row-->
+                    <div class="row pt-2">
+                      <!--Grid column-->
+                      <div class="col-md-4 col-4">
+                        <div class="avatar mx-auto">
+                          <img src="img/custom/4.jpeg" class="rounded img-fluid" alt="First sample avatar image">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-8 col-8">
+                        <p class="mb-0" id="eleventh"></p>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </li>
+                <li class="timeline-inverted">
+                  <!--Section Title -->
+                  <a href="#!">
+                    <span class="circle grey"></span>
+                  </a>
+                  <!-- Section Description -->
+                  <div class="step-content z-depth-1 mr-xl-3 p-4 hoverable">
+                    <h4 class="font-weight-bold">Move on</h4>
+                    <p class="text-muted mt-3">
+                      <i class="far fa-clock-o" aria-hidden="true"></i> 2019-2020
+                    </p>
+                    <!--Grid row-->
+                    <div class="row pt-2">
+                      <!--Grid column-->
+                      <div class="col-md-4 col-4">
+                        <div class="avatar mx-auto">
+                          <img src="img/custom/5.jpeg" class="rounded img-fluid" alt="First sample avatar image">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-8 col-8">
+                        <p class="mb-0" id="twelfth"></p>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </li>
+                <li>
+                  <!--Section Title -->
+                  <a href="#!">
+                    <span class="circle grey"></span>
+                  </a>
+                  <!-- Section Description -->
+                  <div class="step-content z-depth-1 ml-3 p-4 hoverable">
+                    <h4 class="font-weight-bold">Recovery</h4>
+                    <p class="text-muted mt-3">
+                      <i class="far fa-clock-o" aria-hidden="true"></i> 2019-2020
+                    </p>
+                    <!--Grid row-->
+                    <div class="row pt-2">
+                      <!--Grid column-->
+                      <div class="col-md-4 col-4">
+                        <div class="avatar mx-auto">
+                          <img src="img/custom/6.jpeg" class="rounded img-fluid" alt="First sample avatar image">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-8 col-8">
+                        <p class="mb-0" id="thirteenth">
+                        </p>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </li>
+                <li class="timeline-inverted">
+                  <!--Section Title -->
+                  <a href="#!">
+                    <span class="circle grey"></span>
+                  </a>
+                  <!-- Section Description -->
+                  <div class="step-content z-depth-1 mr-xl-3 p-4 hoverable wow fadeIn">
+                    <h4 class="font-weight-bold">Your question today</h4>
+                    <p class="text-muted mt-3">
+                      <i class="far fa-clock-o" aria-hidden="true"></i> 2020
+                    </p>
+                    <!--Grid row-->
+                    <div class="row pt-2">
+                      <!--Grid column-->
+                      <div class="col-md-4 col-4">
+                        <div class="avatar mx-auto">
+                          <img src="img/custom/7.jpeg" class="rounded img-fluid" alt="First sample avatar image">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-8 col-8">
+                        <p class="mb-0" id="fourteenth">
+                        </p>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </li>
+              </ul>
+              <!-- Timeline Wrapper -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Details -->
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 text-center">
+          <!--Section: FAQ v.5-->
+          <section id="faq" class="pt-1">
+            <!-- Section description -->
+            <p class="text-center w-responsive mx-auto my-5 text-primary wow fadeIn" data-wow-delay="0.2s"
+              id="myAnswer">
+            </p>
+          </section>
+          <hr>
+          <p class="text-center" id="countdown"></p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!-- Main content -->
+
   <!--Footer-->
   <footer class="page-footer bg-primary text-center text-md-left pt-0">
     <!--Copyright-->
     <div class="footer-copyright py-3 text-center">
       <div class="container-fluid">
-        © 2020 Copyright: -
+        © 2020 Copyright: Something & Something
       </div>
     </div>
     <!--/Copyright-->
@@ -87,30 +538,7 @@
     // Animation init
     new WOW().init();
   </script>
-
-
-
-  <script type="text/javascript">
-    let opacity = 0;
-    let intervalID = 0;
-    window.onload = fadeIn;
-
-    function fadeIn() {
-      setInterval(show, 400);
-    }
-
-    function show() {
-      let fade = document.getElementById("fade");
-      opacity = Number(window.getComputedStyle(fade)
-        .getPropertyValue("opacity"));
-      if (opacity < 1) {
-        opacity = opacity + 0.03;
-        fade.style.opacity = opacity
-      } else {
-        clearInterval(intervalID);
-      }
-    }
-  </script>
+  <script src="js/custom/something.js"></script>
 </body>
 
 </html>

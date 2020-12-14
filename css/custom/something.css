@@ -14,3 +14,7 @@ header,
 .gif {
     width: 350px;
 }
+
+.gif:hover {
+    transform: scale(1.2);
+}

@@ -141,7 +141,7 @@ let ourImg = document.querySelectorAll('img');
 // convert to array
 let ourImgArray = Array.prototype.slice.call(ourImg);
 // getRandom img
-ourImgArray.slice(1).forEach(element => {
+ourImgArray.slice(1,16).forEach(element => {
   element.src = "img/custom/"+randomImage();
 });
 
@@ -152,7 +152,7 @@ btnChangeImages.forEach(btn => {
     randomImage = () => {
       return images[Math.floor(Math.random() * images.length)]
     }
-    ourImgArray.slice(1).forEach(element => {
+    ourImgArray.slice(1,16).forEach(element => {
       element.src = "img/custom/"+randomImage();
     });
     
@@ -216,4 +216,15 @@ let x = setInterval(function () {
     clearInterval(x);
     document.getElementById("countdown").innerHTML = "<span class='text-primary'> Congrats to whoever be with you.</span>";
   }
+}, 1000);
+
+const countdownMessage = document.querySelector('#countdownMessage');
+let timeleft = 6;
+let timer = setInterval(() => {
+  if(timeleft <= 0){
+    clearInterval(timer)
+    countdownMessage.remove();
+  }
+  countdownMessage.textContent =  timeleft;
+  timeleft -=1;
 }, 1000);

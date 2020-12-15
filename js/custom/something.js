@@ -145,6 +145,17 @@ ourImgArray.slice(1).forEach(element => {
   element.src = "img/custom/"+randomImage();
 });
 
+const btnChangeImages = document.querySelector('#btnChangeImages');
+btnChangeImages.addEventListener('click', function(){
+  randomImage = () => {
+    return images[Math.floor(Math.random() * images.length)]
+  }
+  ourImgArray.slice(1).forEach(element => {
+    element.src = "img/custom/"+randomImage();
+  });
+  
+})
+
 // const ourAudio = document.querySelector('source');
 // ourAudio.src = "assets/"+randomSong()+".mp3";
 

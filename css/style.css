@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /* Your custom styles */
 html,
 body {
@@ -178,4 +176,26 @@ body {
         text-shadow: 0 0 1rem #fefefe;
     }
 }
->>>>>>> 54853f87ddd88714298bc5b8af181d5569305815
+
+/* Button play */
+.btnContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btnContainer .btnPlay {
+    background-color: #324a62;
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 21px;
+    color: #ddd;
+    border: none;
+    padding: 0;
+}
+
+.btnContainer .btnPlay:hover {
+    background-color: #273c50;
+    cursor: pointer;
+}

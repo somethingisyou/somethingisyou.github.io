@@ -185,14 +185,14 @@ body {
 
 .btnContainer .btnPlay {
     background-color: #324a62;
-    width: 30%;
+    width: 40%;
     height: 50px;
     border-radius: 10px;
     font-weight: bold;
     font-size: 21px;
     color: #ddd;
     border: none;
-    padding: 0;
+    padding: 4px;
 }
 
 .btnContainer .btnPlay:hover {

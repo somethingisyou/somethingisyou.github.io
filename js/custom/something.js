@@ -15,6 +15,6 @@ btnOurSong.addEventListener('click', function () {
     btnOurSong.textContent = "Enough";
   } else {
     ourSong.pause();
-    btnOurSong.textContent = "Before you go";
+    btnOurSong.textContent = "Photograph";
   }
 });
